@@ -317,7 +317,7 @@ class plant_diseases_detection():
               #st.write('Prediction probability :{:.2f}%'.format((np.max(preds)*100))
               st.subheader("Suggested Pesticide is:")
               st.info(pesticide_c(pred))
-              st.balloons()
+              #st.balloons()
               
         
             
@@ -329,7 +329,7 @@ class plant_diseases_detection():
                 #st.write('Prediction probability :{:.2f}%'.format((np.max(preds)*100))
                 st.subheader("Suggested Pesticide is:")
                 st.info(pesticide_c(pred))
-                st.balloons()
+                #st.balloons()
             if(add_selectbox=='ResNet50'):
                 st.write("You are choosen Image classification with ResNet50")
                 pred,preds=classify_image(image,Xception_model)
@@ -338,7 +338,7 @@ class plant_diseases_detection():
                 #st.write('Prediction probability :{:.2f}%'.format((np.max(preds)*100))
                 st.subheader("Suggested Pesticide is:")
                 st.info(pesticide_c(pred))
-                st.balloons()
+                #st.balloons()
             if(add_selectbox=='Xception'):
                 st.write("You are choosen Image classification with Xception")
                 pred,preds=classify_image(image,Xception_model)
@@ -347,7 +347,7 @@ class plant_diseases_detection():
                 #st.write('Prediction probability :{:.2f}%'.format((np.max(preds)*100))
                 st.subheader("Suggested Pesticide is:")
                 st.info(pesticide_c(pred))
-                st.balloons()
+                #st.balloons()
 
             if(add_selectbox=='InceptionV3'):
                 st.write("You are choosen Image classification with InceptionV3")
@@ -357,7 +357,7 @@ class plant_diseases_detection():
                 #st.write('Prediction probability :{:.2f}%'.format((np.max(preds)*100))
                 st.subheader("Suggested Pesticide is:")
                 st.info(pesticide_c(pred))
-                st.balloons()
+               # st.balloons()
             
                 
             with col2:
@@ -375,6 +375,6 @@ class plant_diseases_detection():
       else:
           st.write("Please select image:")
   
-      
+  st.cache
   page_setup()
 plant_diseases_detection()
