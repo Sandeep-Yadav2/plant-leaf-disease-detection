@@ -17,11 +17,11 @@ Xception_model=load_model('Xception.h5')
 #InceptionV3_model=load_model('InceptionV3.h5')
 #VGG16_model=load_model('VGG16.h5')
 #ResNet50_model= load_model("ResNet50.h5")
-@st.cache
+#@st.cache
 class plant_diseases_detection():
-  global pred
+  
   def page_setup():
-    global pred
+    
     st.set_page_config(page_title="Plant Disease Detection App", page_icon="icon.png", layout='centered', initial_sidebar_state='auto')
     
     st.title("Plant Diseases Detection")
@@ -109,7 +109,7 @@ class plant_diseases_detection():
         st.write("Training Accuracy of ResNet50 Model:",(resnet_training_acc),'%')
         st.write("Validation Accuracy of ResNet50 Model:",(resnet_val_acc),'%' )
         if st.button("Epochs Details"):
-          image=Image.open("DataImages/resnet_top_10.png")
+          image=Image.open("DataImages/resnet_top_10.PNG")
           st.image(image)
         
         col1,col2=st.beta_columns(2)
@@ -130,7 +130,7 @@ class plant_diseases_detection():
         st.write("Training Accuracy of VGG16 Model:",(vgg_training_acc),'%')
         st.write("Validation Accuracy of VGG16 Model:",(vgg_val_acc),'%' )
         if st.button("Epochs Details"):
-          image=Image.open("DataImages/vgg16_top_10.png")
+          image=Image.open("DataImages/vgg16_top_10.PNG")
           st.image(image)
         
         col1,col2=st.beta_columns(2)
@@ -151,7 +151,7 @@ class plant_diseases_detection():
         st.write("Training Accuracy of MobileNetV2 Model:",(mob_training_acc),'%')
         st.write("Validation Accuracy of MobileNetV2 Model:",(mob_val_acc),'%' )
         if st.button("Epochs Details"):
-          image=Image.open("DataImages/mobilenet_top_10.png")
+          image=Image.open("DataImages/mobilenet_top_10.PNG")
           st.image(image)
           
         col1,col2=st.beta_columns(2)
@@ -174,7 +174,7 @@ class plant_diseases_detection():
         st.write("Training Accuracy of Xception Model:",(Xception_training_acc),'%')
         st.write("Validation Accuracy of Xception Model:",(Xception_val_acc),'%' )
         if st.button("Epochs Details"):
-          image=Image.open("DataImages/xception_top_10.png")
+          image=Image.open("DataImages/xception_top_10.PNG")
           st.image(image)
         col1,col2=st.beta_columns(2)
         with col1:
@@ -195,7 +195,7 @@ class plant_diseases_detection():
         st.write("Training Accuracy of InceptionV3 Model:",(Inception_training_acc),'%')
         st.write("Validation Accuracy of InceptionV3 Model:",(Inception_val_acc),'%')
         if st.button("Epochs Details"):
-          image=Image.open("DataImages/inceptionv3_top_10.png")
+          image=Image.open("DataImages/inceptionv3_top_10.PNG")
           st.image(image)
         
         col1,col2=st.beta_columns(2)
