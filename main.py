@@ -27,7 +27,7 @@ class plant_diseases_detection():
     st.markdown("""
     <style>
     .reportview-container {
-        background: url("https://source.unsplash.com/1600x900/?sky,cloud")
+        background: url("https://source.unsplash.com/1600x900/?plants")
     }
    .sidebar .sidebar-content {
         background: url("")
