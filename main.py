@@ -21,10 +21,7 @@ Xception_model=load_model('Xception.h5')
 #VGG16_model=load_model('VGG16.h5')
 #ResNet50_model= load_model("ResNet50.h5")
 #@st.cache
-class plant_diseases_detection():
-  #st.cache(page_setup)
-  def page_setup():
-    st.markdown("""
+st.markdown("""
     <style>
     .reportview-container {
         background: url("https://source.unsplash.com/1600x900/?plants")
@@ -36,6 +33,10 @@ class plant_diseases_detection():
     """,
     unsafe_allow_html=True
 )
+    
+class plant_diseases_detection():
+  
+  def page_setup():
     
     st.set_page_config(page_title="Plant Disease Detection App", page_icon="icon.png", layout='centered', initial_sidebar_state='auto')
     
