@@ -22,7 +22,7 @@ Xception_model=load_model('Xception.h5')
 #ResNet50_model= load_model("ResNet50.h5")
 #@st.cache
 class plant_diseases_detection():
-  st.cache
+  #st.cache(page_setup)
   def page_setup():
     st.markdown("""
     <style>
