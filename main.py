@@ -21,18 +21,7 @@ Xception_model=load_model('Xception.h5')
 #VGG16_model=load_model('VGG16.h5')
 #ResNet50_model= load_model("ResNet50.h5")
 #@st.cache
-st.markdown("""
-    <style>
-    .reportview-container {
-        background: url("https://source.unsplash.com/1600x900/?plants")
-    }
-   .sidebar .sidebar-content {
-        background: url("")
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
     
 class plant_diseases_detection():
   
