@@ -1,3 +1,5 @@
+os.environ['TF_XLA_FLAGS'] = '--tf_xla_enable_xla_devices'
+
 import tensorflow as tf
 import streamlit as st
 from keras.models import load_model
