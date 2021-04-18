@@ -226,13 +226,17 @@ class plant_diseases_detection():
     
         #st.markdown("""       ****************  """ "unsafe_allow_html=True")
       with col9:
-        st.write("Abhishek")
-        st.info("Image not available")
+        image=Image.open("DataImages/abhishek.jpeg")
+        st.image(image,caption="Abhishek")
+        #st.write("Abhishek")
+        #st.info("Image not available")
 
 
       with col10:
-        st.write("Om Prakash")
-        st.info("image not available")
+        image=Image.open("DataImages/om.jpeg")
+        st.image(image,caption="Om Prakash")
+        #st.write("Om Prakash")
+        #st.info("image not available")
         
       
 
