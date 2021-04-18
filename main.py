@@ -222,11 +222,13 @@ class plant_diseases_detection():
       with col8:
         #st.write("Sandeep Yadav")
         image=Image.open("DataImages/Sandeep_Yadav.jpg")
+        image=image.resize(512,512)
         st.image(image,caption="Sandeep Yadav")
     
         #st.markdown("""       ****************  """ "unsafe_allow_html=True")
       with col9:
         image=Image.open("DataImages/abhishek.jpeg")
+        image=image.resize(512,512)
         st.image(image,caption="Abhishek")
         #st.write("Abhishek")
         #st.info("Image not available")
@@ -234,6 +236,7 @@ class plant_diseases_detection():
 
       with col10:
         image=Image.open("DataImages/om.jpeg")
+        image=image.resize(512,512)
         st.image(image,caption="Om Prakash")
         #st.write("Om Prakash")
         #st.info("image not available")
